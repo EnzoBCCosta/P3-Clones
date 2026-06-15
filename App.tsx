@@ -1,11 +1,21 @@
+import React, { useState } from 'react';
+import { View, StyleSheet } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { LoginScreen } from './src/pages/login/Login';
+import { MainScreen } from './src/pages/mainPaige/MainPaige';
 
 export default function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="light" />
+
+      {isLoggedIn ? (
+        <MainScreen />
+      ) : (
+        <LoginScreen onLoginSuccess={() => setIsLoggedIn(true)} />
+      )}
     </View>
   );
 }
@@ -13,8 +23,6 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#1E1F22',
   },
 });
