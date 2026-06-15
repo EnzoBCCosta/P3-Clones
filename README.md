@@ -2,40 +2,6 @@
 
 Clone da interface do Discord desenvolvido com **React Native** e **Expo**, como parte da disciplina (P3). O projeto reproduz a experiência visual e estrutural do Discord, incluindo tela de login e tela principal de chat.
 
-## ✨ Sobre o projeto
-
-Este aplicativo é construído com Expo + TypeScript, utilizando React Native para renderização multiplataforma (Android, iOS e Web). A estrutura principal do app fica em `App.tsx`, que alterna entre a tela de **Login** e a **tela principal** (Main) com base no estado de autenticação do usuário.
-
-## 🛠️ Tecnologias utilizadas
-
-- [Expo](https://expo.dev/) `~54.0.34`
-- [React](https://react.dev/) `19.1.0`
-- [React Native](https://reactnative.dev/) `0.81.5`
-- [React DOM](https://react.dev/) / `react-native-web` (suporte para Web)
-- TypeScript `~5.9.2`
-
-## 📁 Estrutura do projeto
-
-```
-P3-Clones/
-├── App.tsx                      # Componente raiz da aplicação
-├── index.ts                     # Ponto de entrada do app
-├── app.json                     # Configurações do Expo
-├── src/
-│   ├── components/
-│   │   └── Imput.tsx             # Componente de input reutilizável
-│   └── pages/
-│       ├── login/
-│       │   ├── Login.tsx          # Tela de Login (LoginScreen)
-│       │   └── styles.ts
-│       └── mainPaige/
-│           ├── MainPaige.tsx      # Tela principal (MainScreen)
-│           └── styles.ts
-├── assets/                       # Imagens, ícones e fontes
-├── Print's das telas/            # Capturas de tela do app
-└── package.json
-```
-
 ## 🚀 Como executar o projeto
 
 ### Pré-requisitos
@@ -43,31 +9,6 @@ P3-Clones/
 - [Node.js](https://nodejs.org/) instalado
 - [Expo CLI](https://docs.expo.dev/get-started/installation/) (instalado automaticamente via `npx`)
 - Aplicativo **Expo Go** no celular (opcional, para testar em dispositivo físico)
-
-### Passo a passo
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/EnzoBCCosta/P3-Clones.git
-   cd P3-Clones
-   ```
-
-2. Instale as dependências:
-   ```bash
-   npm install
-   ```
-
-3. Inicie o projeto:
-   ```bash
-   npm start
-   ```
-
-4. Escolha a plataforma desejada:
-   ```bash
-   npm run android   # Executar em emulador/dispositivo Android
-   npm run ios       # Executar em simulador/dispositivo iOS
-   npm run web       # Executar no navegador
-   ```
 
 ## 📱 Funcionalidades
 
@@ -94,7 +35,3 @@ Comparação entre o Discord original e o clone desenvolvido neste projeto:
 ## 👤 Autor
 
 Desenvolvido por [Enzo B. C. Costa](https://github.com/EnzoBCCosta).
-
-## 📄 Licença
-
-Projeto acadêmico desenvolvido para fins de estudo (P3).
